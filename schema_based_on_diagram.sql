@@ -33,7 +33,7 @@ status VARCHAR,
 PRIMARY KEY(id)
 );
 
-CREATE TABLE designating_treatments (
+CREATE TABLE designated_treatments (
  id INT GENERATED ALWAYS AS IDENTITY,
   medical_histories_id INT REFERENCES medical_histories(id),
   treatments INT REFERENCES treatments(id),
