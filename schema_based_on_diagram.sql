@@ -47,7 +47,7 @@ CREATE TABLE invoice_items(
 
 CREATE TABLE designated_treatments (
   id INT GENERATED ALWAYS AS IDENTITY,
-  medical_histories_id INT REFERENCES medical_histories(id),
+  medical_history_id INT REFERENCES medical_histories(id),
   treatments_id INT REFERENCES treatments(id),
   PRIMARY KEY(id)
 );
