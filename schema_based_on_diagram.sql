@@ -14,6 +14,15 @@ CREATE TABLE treatments(
  PRIMARY KEY(id)
 );
 
+CREATE TABLE medical_histories(
+ id INT GENERATED ALWAYS AS IDENTITY, 
+ admited_at TIMESTAMP,
+ patient_id INT,
+ status VARCHAR,
+ FOREIGN KEY (patient_id) REFERENCES patients(id),
+ PRIMARY KEY(id)
+);
+
 CREATE TABLE invoices(
  id INT GENERATED ALWAYS AS IDENTITY, 
  total_amount DECIMAL,
@@ -29,19 +38,10 @@ CREATE TABLE invoice_items(
  unit_price DECIMAL,
  quantity INT,
  total_price DECIMAL,
- invoce_id INT,
+ invoice_id INT,
  treatment_id INT,
  FOREIGN KEY (invoice_id) REFERENCES invoices(id),
  FOREIGN KEY (treatment_id) REFERENCES treatments(id),
- PRIMARY KEY(id)
-);
-
-CREATE TABLE medical_histories(
- id INT GENERATED ALWAYS AS IDENTITY, 
- admited_at TIMESTAMP,
- patient_id INT,
- status VARCHAR,
- FOREIGN KEY (patient_id) REFERENCES patients(id),
  PRIMARY KEY(id)
 );
 
