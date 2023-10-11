@@ -76,6 +76,10 @@ Clone this repository to your desired folder:
 - Twitter: [@BiancaMeLopez](https://twitter.com/BiancaMeLopez)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/bianca-lopez-55a4a3276/)
 
+👤 **Thierry Noumbuh**
+
+- GitHub: [@axcell-0](https://github.com/axcell-0/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
